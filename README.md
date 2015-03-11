@@ -1,2 +1,3 @@
 # valdore86-autopkg-recipes
-some recipes for autopkg
+
+Recipes for AutoPkg (https://github.com/autopkg/autopkg).
