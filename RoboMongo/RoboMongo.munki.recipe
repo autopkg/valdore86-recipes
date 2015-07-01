@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
@@ -40,42 +40,42 @@
 		<string>com.github.valdore86.autopkg.download.RoboMongo</string>
 		<key>Process</key>
 		<array>
-		<dict>
-			<key>Processor</key>
-			<string>Versioner</string>
-			<key>Arguments</key>
 			<dict>
-				<key>input_plist_path</key>
-				<string>%pathname%/Robomongo.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>MunkiPkginfoMerger</string>
-			<key>Arguments</key>
-			<dict>
-				<key>additional_pkginfo</key>
+				<key>Processor</key>
+				<string>Versioner</string>
+				<key>Arguments</key>
 				<dict>
-					<key>version</key>
-					<string>%version%</string>
+					<key>input_plist_path</key>
+					<string>%pathname%/Robomongo.app/Contents/Info.plist</string>
+					<key>plist_version_key</key>
+					<string>CFBundleVersion</string>
 				</dict>
 			</dict>
-		</dict>
-		<dict>
-			<key>Arguments</key>
 			<dict>
-				<key>pkg_path</key>
-				<string>%pathname%</string>
-				<key>repo_subdirectory</key>
-				<string>%MUNKI_REPO_SUBDIR%</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
+				<key>Processor</key>
+				<string>MunkiPkginfoMerger</string>
+				<key>Arguments</key>
+				<dict>
+					<key>additional_pkginfo</key>
+					<dict>
+						<key>version</key>
+						<string>%version%</string>
+					</dict>
+				</dict>
 			</dict>
-			<key>Processor</key>
-			<string>MunkiImporter</string>
-		</dict>
-    </array>
-</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>pkg_path</key>
+					<string>%pathname%</string>
+					<key>repo_subdirectory</key>
+					<string>%MUNKI_REPO_SUBDIR%</string>
+					<key>version_comparison_key</key>
+					<string>CFBundleVersion</string>
+				</dict>
+				<key>Processor</key>
+				<string>MunkiImporter</string>
+			</dict>
+		</array>
+	</dict>
 </plist>
