@@ -5,7 +5,7 @@
 		<key>Description</key>
 		<string>Downloads the latest stable (not Alpha) KeePassX.</string>
 		<key>Identifier</key>
-		<string>com.github.valdore86.autopkg.download.KeePassX</string>
+		<string>com.github.valdore86.download.KeePassX</string>
 		<key>Input</key>
 		<dict>
 			<key>NAME</key>
