@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Description</key>
-		<string>Download recipe for KeePassX.</string>
+		<string>Downloads the latest stable (not Alpha) KeePassX and imports it in into Munki.</string>
 		<key>Identifier</key>
 		<string>com.github.valdore86.autopkg.download.KeePassX</string>
 		<key>Input</key>

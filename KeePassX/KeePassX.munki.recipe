@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Description</key>
-		<string>Downloads KeePassX and imports in into Munki.</string>
+		<string>Downloads the latest stable (not Alpha) KeePassX and imports it in into Munki.</string>
 		<key>Identifier</key>
 		<string>com.github.valdore86.munki.KeePassX</string>
 		<key>Input</key>
@@ -23,11 +23,13 @@
 				<key>category</key>
 				<string>%MUNKI_CATEGORY%</string>
 				<key>description</key>
-				<string>KeePassX is an application for people with extremly high demands on secure personal data management. It has a light interface, is cross platform and published under the terms of the GNU General Public License.</string>
+				<string>KeePassX is an application for people with extremly high demands on secure personal data management. It has a light interface, is cross platform and published under the terms of the GNU General Public License.
+				
+				This is the latest stable version of KeePassX</string>
 				<key>developer</key>
-				<string>KeePassX</string>
+				<string>%NAME%</string>
 				<key>display_name</key>
-				<string>KeePassX</string>
+				<string>%NAME%</string>
 				<key>name</key>
 				<string>%NAME%</string>
 				<key>unattended_install</key>
@@ -46,7 +48,7 @@
 				<key>Arguments</key>
 				<dict>
 					<key>input_plist_path</key>
-					<string>%pathname%/KeePassX.app/Contents/Info.plist</string>
+					<string>%pathname%/%NAME%.app/Contents/Info.plist</string>
 					<key>plist_version_key</key>
 					<string>CFBundleVersion</string>
 				</dict>
