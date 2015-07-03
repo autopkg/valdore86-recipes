@@ -1,4 +1,4 @@
 # valdore86-recipes
 
-Recipes for AutoPkg (https://github.com/autopkg/autopkg). No other AutoPkg repos required.
-Primarily made to be used with Munki.
+AutoPkg recipes (https://github.com/autopkg/autopkg) to be used for adding packages to Munki.
+No other AutoPkg repos required.
