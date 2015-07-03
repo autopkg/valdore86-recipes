@@ -5,14 +5,14 @@
 		<key>Description</key>
 		<string>Downloads the current release version of Things and builds a package.</string>
 		<key>Identifier</key>
-		<string>com.github.valdore86.autopkg.pkg.Things</string>
+		<string>com.github.valdore86.pkg.Things</string>
 		<key>Input</key>
 		<dict>
 			<key>NAME</key>
 			<string>Things</string>
 		</dict>
 		<key>ParentRecipe</key>
-		<string>com.github.valdore86.autopkg.download.Things</string>
+		<string>com.github.valdore86.download.Things</string>
 		<key>MinimumVersion</key>
 		<string>0.2.0</string>
 		<key>Process</key>
