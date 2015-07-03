@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Description</key>
-		<string>Download recipe for Robomongo.</string>
+		<string>Download recipe for the latest Robomongo.</string>
 		<key>Identifier</key>
 		<string>com.github.valdore86.autopkg.download.RoboMongo</string>
 		<key>Input</key>
