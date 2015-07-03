@@ -5,7 +5,7 @@
 		<key>Description</key>
 		<string>Download recipe for Things.</string>
 		<key>Identifier</key>
-		<string>com.github.valdore86.autopkg.download.Things</string>
+		<string>com.github.valdore86.download.Things</string>
 		<key>Input</key>
 		<dict>
 			<key>NAME</key>
