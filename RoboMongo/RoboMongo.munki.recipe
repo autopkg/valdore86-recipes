@@ -5,7 +5,7 @@
 		<key>Description</key>
 		<string>Downloads the latest Robomongo and imports it in into Munki.</string>
 		<key>Identifier</key>
-		<string>com.github.valdore86.autopkg.munki.RoboMongo</string>
+		<string>com.github.valdore86.munki.RoboMongo</string>
 		<key>Input</key>
 		<dict>
 			<key>MUNKI_REPO_SUBDIR</key>
@@ -37,7 +37,7 @@
 		<key>MinimumVersion</key>
 		<string>0.2.0</string>
 		<key>ParentRecipe</key>
-		<string>com.github.valdore86.autopkg.download.RoboMongo</string>
+		<string>com.github.valdore86.download.RoboMongo</string>
 		<key>Process</key>
 		<array>
 			<dict>
