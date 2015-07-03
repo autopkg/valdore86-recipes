@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of Fantastical.</string>
+    <string>Downloads the current release version of Fantastical 2.</string>
     <key>Identifier</key>
     <string>com.github.valdore86.download.fantastical2</string>
     <key>Input</key>
