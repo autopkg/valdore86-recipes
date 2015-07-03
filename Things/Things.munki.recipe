@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Description</key>
-		<string>Downloads Things and imports in into Munki.</string>
+		<string>Downloads Things from MacUpdate and imports it in into Munki.</string>
 		<key>Identifier</key>
 		<string>com.github.valdore86.autopkg.munki.Things</string>
 		<key>Input</key>
@@ -27,7 +27,7 @@
 				<key>developer</key>
 				<string>Cultured Code</string>
 				<key>display_name</key>
-				<string>Things</string>
+				<string>%NAME%</string>
 				<key>name</key>
 				<string>%NAME%</string>
 				<key>unattended_install</key>
