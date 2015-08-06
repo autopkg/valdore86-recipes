@@ -3,7 +3,7 @@
 <plist version="1.0">
 	<dict>
 		<key>Description</key>
-		<string>Download recipe for the latest devoloCockpit.</string>
+		<string>Download recipe for the latest devolo Cockpit.</string>
 		<key>Identifier</key>
 		<string>com.github.valdore86.download.devoloCockpit</string>
 		<key>Input</key>
