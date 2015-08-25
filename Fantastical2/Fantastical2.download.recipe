@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Fantastical</string>
         <key>SPARKLE_FEED_URL</key>
-        <string>https://flexibits.com/fantastical/appcast.php</string>
+        <string>https://flexibits.com/fantastical/appcast2.php</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
