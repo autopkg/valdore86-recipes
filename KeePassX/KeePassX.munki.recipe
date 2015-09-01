@@ -24,7 +24,7 @@
 				<string>%MUNKI_CATEGORY%</string>
 				<key>description</key>
 				<string>KeePassX is an application for people with extremly high demands on secure personal data management. It has a light interface, is cross platform and published under the terms of the GNU General Public License.
-				
+
 				This is the latest stable version of KeePassX</string>
 				<key>developer</key>
 				<string>%NAME%</string>
@@ -37,7 +37,7 @@
 			</dict>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.2.0</string>
+		<string>0.4.2</string>
 		<key>ParentRecipe</key>
 		<string>com.github.valdore86.download.KeePassX</string>
 		<key>Process</key>

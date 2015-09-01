@@ -14,7 +14,7 @@
         <string>https://www.getharvest.com/harvest/mac/appcast.xml</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.7</string>
+    <string>0.4.2</string>
     <key>Process</key>
     <array>
         <dict>

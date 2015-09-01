@@ -20,7 +20,7 @@
             </array>
             <key>description</key>
             <string>Lightning fast time tracking right from your desktop.
-            
+
 Simple project and task selection make entering your time a breeze. We’ve designed this FREE lightweight app to make tracking your time throughout the day easier than ever.</string>
             <key>name</key>
             <string>%NAME%</string>
@@ -35,7 +35,7 @@ Simple project and task selection make entering your time a breeze. We’ve desi
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.4.2</string>
     <key>ParentRecipe</key>
     <string>com.github.valdore86.download.harvest</string>
     <key>Process</key>
