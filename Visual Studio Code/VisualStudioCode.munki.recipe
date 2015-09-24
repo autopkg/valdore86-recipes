@@ -14,7 +14,7 @@
 			<string>apps/Visual Studio Code</string>
 			<key>blocking_applications</key>
 			<array>
-				<string>Visual Studio Cod</string>
+				<string>Visual Studio Code</string>
 			</array>
 			<key>pkginfo</key>
 			<dict>
