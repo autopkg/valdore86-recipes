@@ -10,6 +10,10 @@
 		<dict>
 			<key>NAME</key>
 			<string>UniversalMediaServerJava8</string>
+			<key>BASE_URL</key>
+			<string>http://www.universalmediaserver.com</string>
+			<key>DOWNLOAD_URL</key>
+			<string>http://sourceforge.net/projects/unimediaserver/files/Official%20Releases/OS%20X/</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>0.4.2</string>
@@ -17,25 +21,27 @@
 		<array>
 			<dict>
 				<key>Processor</key>
-				<string>URLTextSearcher</string>
+				<string>CURLTextSearcher</string>
 				<key>Arguments</key>
 				<dict>
 					<key>url</key>
-					<string>http://www.universalmediaserver.com</string>
+					<string>%BASE_URL%</string>
 					<key>re_pattern</key>
-					<string>(http://sourceforge.net/projects/unimediaserver/files/Official%20Releases/OS%20X/UMS-[0-9].[0-9].[0-9]-Java8.dmg/download)</string>
+					<string>(UMS-[0-9\.]+-Java8.dmg/download)</string>
 					<key>result_output_var_name</key>
-					<string>url</string>
+					<string>search_url</string>
 				</dict>
 			</dict>
 			<dict>
+				<key>Processor</key>
+				<string>CURLDownloader</string>
 				<key>Arguments</key>
 				<dict>
+					<key>url</key>
+					<string>%DOWNLOAD_URL%%search_url%</string>
 					<key>filename</key>
 					<string>%NAME%.dmg</string>
 				</dict>
-				<key>Processor</key>
-				<string>URLDownloader</string>
 			</dict>
 			<dict>
 				<key>Processor</key>
