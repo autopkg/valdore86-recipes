@@ -23,7 +23,7 @@
 					<key>url</key>
 					<string>http://www.keepassx.org/downloads/</string>
 					<key>re_pattern</key>
-					<string>(/releases/[0-9].[0-9].[0-9]/KeePassX-[0-9].[0-9].[0-9].dmg)</string>
+					<string>(/releases/[0-9\.]+/KeePassX-[0-9\.]+.dmg)</string>
 					<key>result_output_var_name</key>
 					<string>url</string>
 				</dict>
