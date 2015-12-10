@@ -21,9 +21,9 @@
 				<key>Arguments</key>
 				<dict>
 					<key>url</key>
-					<string>https://code.visualstudio.com/</string>
+					<string>https://github.com/Microsoft/vscode/blob/master/package.json</string>
 					<key>re_pattern</key>
-					<string>VS Code ([0-9\.]+) is available.</string>
+					<string>([0-12\.]+)/package.json</string>
 					<key>result_output_var_name</key>
 					<string>version</string>
 				</dict>
