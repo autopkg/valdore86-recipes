@@ -9,7 +9,7 @@
 		<key>Input</key>
 		<dict>
 			<key>NAME</key>
-			<string>RoboMongo</string>			
+			<string>RoboMongo</string>
 			<key>BASE_URL</key>
 			<string>http://app.robomongo.org</string>
 		</dict>
