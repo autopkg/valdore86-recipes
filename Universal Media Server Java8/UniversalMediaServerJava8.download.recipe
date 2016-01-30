@@ -16,7 +16,7 @@
 			<string>http://sourceforge.net/projects/unimediaserver/files/Official%20Releases/OS%20X/</string>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.4.2</string>
+		<string>0.5.2</string>
 		<key>Process</key>
 		<array>
 			<dict>
