@@ -11,7 +11,7 @@
 			<key>NAME</key>
 			<string>Things</string>
 			<key>SPARKLE_FEED_URL</key>
-			<string>http://culturedcode.cachefly.net/things/sparkle/sparkle_en.xml</string>
+			<string>https://culturedcode.cachefly.net/things/sparkle/sparkle_en.xml</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>0.4.2</string>
