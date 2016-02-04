@@ -23,7 +23,7 @@
 					<key>url</key>
 					<string>https://github.com/Microsoft/vscode/releases/latest</string>
 					<key>re_pattern</key>
-					<string>([0-12\.]+.6)</string>
+					<string>/Microsoft/vscode/archive/([0-12\.]+[0-9]+).zip</string>
 					<key>result_output_var_name</key>
 					<string>version</string>
 				</dict>
@@ -34,9 +34,9 @@
 				<key>Arguments</key>
 				<dict>
 					<key>url</key>
-					<string>https://az764295.vo.msecnd.net/public/%version%/VSCode-darwin.zip</string>
+					<string>https://az764295.vo.msecnd.net/public/%version%-release/VSCode-darwin.zip</string>
 					<key>filename</key>
-					<string>%NAME%.zip</string>
+					<string>vscode.zip</string>
 				</dict>
 			</dict>
 			<dict>
