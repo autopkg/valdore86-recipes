@@ -35,7 +35,7 @@
 				<dict>
 					<key>url</key>
 					<!--<string>https://az764295.vo.msecnd.net/public/%version%-release/VSCode-darwin.zip</string>-->
-					<string>https://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCode-darwin.zip</string>
+					<string>https://az764295.vo.msecnd.net/stable/45d69357c9eb068dd8e624f5b0fe461cd2078d88/VSCode-darwin.zip</string>
 					<key>filename</key>
 					<string>vscode.zip</string>
 				</dict>
