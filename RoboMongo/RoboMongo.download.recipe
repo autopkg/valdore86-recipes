@@ -25,9 +25,13 @@
 					<key>url</key>
 					<string>%BASE_URL%</string>
 					<key>re_pattern</key>
-					<string>(http://download.robomongo.org/[0-9\.]+-rc4/osx/robomongo-[0-9\.]+-rc4-darwin-x86_64-[^\.]+.dmg)</string>
+					<string>Buy and Download.*(https://download.robomongo.org/[0-9\.]+-rc[0-9]/osx/robomongo-[0-9\.]+-rc[0-9]-darwin-x86_64-[^\.]+.dmg)</string>
 					<key>result_output_var_name</key>
 					<string>search_url</string>
+					<key>re_flags</key>
+					<array>
+						<string>DOTALL</string>
+					</array>
 				</dict>
 			</dict>
 			<dict>
