@@ -11,7 +11,7 @@
 			<key>NAME</key>
 			<string>RoboMongo</string>
 			<key>BASE_URL</key>
-			<string>http://app.robomongo.org</string>
+			<string>https://robomongo.org/download</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>0.5.2</string>
