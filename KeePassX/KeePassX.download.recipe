@@ -29,17 +29,14 @@
 				</dict>
 			</dict>
 			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>filename</key>
-					<string>%NAME%.dmg</string>
-				</dict>
 				<key>Processor</key>
 				<string>URLDownloader</string>
 				<key>Arguments</key>
 				<dict>
 					<key>url</key>
 					<string>https://www.keepassx.org%url%</string>
+					<key>filename</key>
+					<string>%NAME%.dmg</string>
 				</dict>
 			</dict>
 			<dict>
