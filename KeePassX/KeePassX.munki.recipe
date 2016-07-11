@@ -39,7 +39,7 @@
 		<key>MinimumVersion</key>
 		<string>0.4.2</string>
 		<key>ParentRecipe</key>
-		<string>com.github.valdore86.download.KeePassX</string>
+		<string>com.github.valdore86.verify.KeePassX</string>
 		<key>Process</key>
 		<array>
 			<dict>
