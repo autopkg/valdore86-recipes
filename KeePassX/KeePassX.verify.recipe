@@ -11,7 +11,7 @@
             <key>NAME</key>
             <string>KeePassX</string>
             <key>KEYID</key>
-            <string>0xFE22C6FD83135D45</string>
+            <string>FE22C6FD83135D45</string>
         </dict>
         <key>MinimumVersion</key>
         <string>0.4.2</string>
