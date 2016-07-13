@@ -14,7 +14,7 @@
 			<string>https://download.fosshub.com/Protected/expiretime=1466709393;badurl=aHR0cDovL3d3dy5mb3NzaHViLmNvbS9Vbml2ZXJzYWwtTWVkaWEtU2VydmVyLmh0bWw=/0b8acbeeb356387ba78f5d4791d28ca2c9dd9fdf54bf1da920a325efaadef86a/Universal-Media-Server/UMS-6.3.2-Java8.dmg</string>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.5.2</string>
+		<string>0.6.1</string>
 		<key>Process</key>
 		<array>
 			<dict>

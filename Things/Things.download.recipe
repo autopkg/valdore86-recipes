@@ -14,7 +14,7 @@
 			<string>https://culturedcode.cachefly.net/things/sparkle/sparkle_en.xml</string>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.4.2</string>
+		<string>0.6.1</string>
 		<key>Process</key>
 		<array>
 			<dict>

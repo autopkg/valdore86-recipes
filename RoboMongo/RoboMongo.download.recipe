@@ -14,7 +14,7 @@
 			<string>https://robomongo.org/download</string>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.5.2</string>
+		<string>0.6.1</string>
 		<key>Process</key>
 		<array>
 			<dict>

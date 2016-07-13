@@ -39,7 +39,7 @@ It streams to many devices including PS3, Xbox One and 360, many TVs (Samsung, P
 			</dict>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.4.2</string>
+		<string>0.6.1</string>
 		<key>ParentRecipe</key>
 		<string>com.github.valdore86.download.UniversalMediaServerJava8</string>
 		<key>Process</key>
