@@ -12,29 +12,29 @@
 			<string>Visual Studio Code</string>
 		</dict>
 		<key>MinimumVersion</key>
-		<string>0.5.2</string>
+		<string>0.6.1</string>
 		<key>Process</key>
 		<array>
+			<!--Sadly GitHubReleasesInfoProvider gives back -- Error: No releases found for repo 'Microsoft/vscode'
 			<dict>
-				<key>Processor</key>
-				<string>CURLTextSearcher</string>
-				<key>Arguments</key>
-				<dict>
-					<key>url</key>
-					<string>https://github.com/Microsoft/vscode/releases/latest</string>
-					<key>re_pattern</key>
-					<string>/Microsoft/vscode/archive/([0-12\.]+[0-9]+[^\.]+).zip</string>
-					<key>result_output_var_name</key>
-					<string>version</string>
-				</dict>
-			</dict>
+                    <key>Processor</key>
+                    <string>GitHubReleasesInfoProvider</string>
+                    <key>Arguments</key>
+                    <dict>
+												<key>sort_by_highest_tag_names</key>
+												<true/>
+                        <key>github_repo</key>
+                        <string>Microsoft/vscode</string>
+                    </dict>
+        </dict>-->
 			<dict>
 				<key>Processor</key>
 				<string>CURLDownloader</string>
 				<key>Arguments</key>
 				<dict>
 					<key>url</key>
-					<string>https://az764295.vo.msecnd.net/stable/e724f269ded347b49fcf1657fc576399354e6703/VSCode-darwin-stable.zip</string>
+					<string>https://az764295.vo.msecnd.net/stable/e6b4afa53e9c0f54edef1673de9001e9f0f547ae/VSCode-darwin-stable.zip</string>
+					<!--<string>%url%</string>-->
 					<key>filename</key>
 					<string>vscode.zip</string>
 				</dict>
