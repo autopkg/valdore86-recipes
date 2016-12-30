@@ -25,7 +25,7 @@
 					<key>url</key>
 					<string>%BASE_URL%</string>
 					<key>re_pattern</key>
-					<string>&amp;nbsp;Download&amp;nbsp;.*?(https://download.robomongo.org/[0-9\.]+-rc[0-9]/osx/robomongo-[0-9\.]+-rc[0-9]-darwin-x86_64-[^\.]+.dmg)</string>
+					<string>&amp;nbsp;Download&amp;nbsp;.*?(https://download.robomongo.org/[0-9\.]+-[0-9]/osx/robomongo-[0-9\.]+-[0-9]-darwin-x86_64-[^\.]+.dmg)</string>
 					<key>result_output_var_name</key>
 					<string>search_url</string>
 					<key>re_flags</key>
