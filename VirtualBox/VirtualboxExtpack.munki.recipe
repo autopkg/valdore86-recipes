@@ -119,7 +119,7 @@ then
 fi
 
 $VBM extpack install --replace \
-	/tmp/Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
+	yes Y |/tmp/Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
 
 exit $?
 </string>
