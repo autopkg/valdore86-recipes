@@ -10,14 +10,14 @@
 		<dict>
 			<key>NAME</key>
 			<string>Things</string>
-			<key>URL</key>
-			<string>https://culturedcode.cachefly.net/things/Things3.zip</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>0.6.1</string>
 		<key>Process</key>
 		<array>
 			<dict>
+				<key>url</key>
+				<string>https://culturedcode.cachefly.net/things/Things3.zip</string>
 				<key>Processor</key>
 				<string>URLDownloader</string>
 			</dict>
