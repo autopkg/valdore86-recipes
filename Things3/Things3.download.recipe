@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
@@ -10,8 +10,6 @@
 		<dict>
 			<key>NAME</key>
 			<string>Things</string>
-			<key>URL</key>
-			<string>https://culturedcode.cachefly.net/things/Things3.zip</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>0.6.1</string>
@@ -19,10 +17,11 @@
 		<array>
 			<dict>
 				<key>Processor</key>
-				<string>URLDownloader</string>
+				<string>CURLDownloader</string>
+				<key>Arguments</key>
 				<dict>
 					<key>url</key>
-					<string>%URL%</string>
+					<string>https://culturedcode.cachefly.net/things/Things3.zip</string>
 				</dict>
 			</dict>
 			<dict>
