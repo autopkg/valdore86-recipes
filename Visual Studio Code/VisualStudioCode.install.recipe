@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Description</key>
+        <string>Uses parent pkg recipe to download the latest version of Visual Studio Code and install it.</string>
+        <key>Identifier</key>
+        <string>com.github.valdore86.install.visualstudiocode</string>
+        <key>MinimumVersion</key>
+        <string>0.6.1</string>
+        <key>ParentRecipe</key>
+        <string>com.github.valdore86.download.visualstudiocode</string>
+        <key>Input</key>
+        <dict>
+        </dict>
+        <key>Process</key>
+        <array>
+            <dict>
+                <key>Processor</key>
+                <string>PkgCopier</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>source_pkg</key>
+                    <string>%RECIPE_CACHE_DIR%/%NAME%/Visual Studio Code.app</string>
+                    <key>pkg_path</key>
+                    <string>/Applications/Visual Studio Code.app</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
