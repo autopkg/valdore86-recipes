@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>Description</key>
-        <string>Uses parent pkg recipe to download latest vfuse and installs it.</string>
+        <string>Uses parent pkg recipe to download the latest version of Visual Studio Code and install it.</string>
         <key>Identifier</key>
         <string>com.github.valdore86.install.visualstudiocode</string>
         <key>MinimumVersion</key>
