@@ -10,3 +10,5 @@ The KeePassX recipe uses GPGSignatureVerifier, which is an external SharedProces
 #### Things
 For Things there are two recipes. One for Things 2 and one for the latest.  
 Since upgrading to Things 3 is a paid upgrade, I don't want to push an update from 2 to 3.
+
+#### Robomongo is renamed to Robo 3T (recipe will remain like this for now)
