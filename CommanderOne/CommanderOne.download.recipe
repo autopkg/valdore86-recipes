@@ -11,7 +11,7 @@
 			<key>NAME</key>
 			<string>CommanderOne</string>
 			<key>URL</key>
-			<string>http://mac.eltima.com/download/commander.dmg</string>
+			<string>https://mac.eltima.com/download/commander.dmg</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>0.6.1</string>
