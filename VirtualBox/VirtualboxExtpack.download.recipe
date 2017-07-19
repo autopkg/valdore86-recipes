@@ -35,8 +35,6 @@
 				<dict>
 					<key>url</key>
 					<string>%url%</string>
-					<key>CHECK_FILESIZE_ONLY</key>
-					<true/>
 					<key>filename</key>
 					<string>Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack</string>
 				</dict>
