@@ -44,20 +44,20 @@
 				<string>EndOfCheckPhase</string>
 			</dict>
 			<dict>
-                <key>Processor</key>
-                <string>CodeSignatureVerifier</string>
-                <key>Arguments</key>
-                <dict>
-                    <key>input_path</key>
-                    <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/%NAME%.pkg</string>
-                    <key>expected_authority_names</key>
+				<key>Processor</key>
+				<string>CodeSignatureVerifier</string>
+				<key>Arguments</key>
+				<dict>
+					<key>input_path</key>
+					<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.dmg/%NAME%.pkg</string>
+					<key>expected_authority_names</key>
 					<array>
-						<string>Developer ID Installer: Oracle America, Inc.</string>
+						<string>Developer ID Installer: Oracle America, Inc. (VB5E2TV963)</string>
 						<string>Developer ID Certification Authority</string>
-                        <string>Apple Root CA</string>
+						<string>Apple Root CA</string>
 					</array>
-                </dict>
-            </dict>
+				</dict>
+			</dict>
 		</array>
 	</dict>
 </plist>
