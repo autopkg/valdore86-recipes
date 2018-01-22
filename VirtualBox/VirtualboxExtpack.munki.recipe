@@ -48,7 +48,7 @@
 					<key>url</key>
 					<string>https://www.virtualbox.org/wiki/Downloads/</string>
 					<key>re_pattern</key>
-					<string>http://download.virtualbox.org/virtualbox/([0-9\.]+)/VirtualBox-[0-9\.]+-[0-999999\.]+-OSX.dmg</string>
+					<string>https://download.virtualbox.org/virtualbox/([0-9\.]+)/VirtualBox-[0-9\.]+-[0-999999\.]+-OSX.dmg</string>
 					<key>result_output_var_name</key>
 					<string>virtualbox_version</string>
 				</dict>
