@@ -35,7 +35,7 @@ Simple project and task selection make entering your time a breeze. We’ve desi
             </dict>
         </dict>
         <key>MinimumVersion</key>
-        <string>0.6.1</string>
+        <string>1.0.4</string>
         <key>ParentRecipe</key>
         <string>com.github.valdore86.download.harvest</string>
         <key>Process</key>

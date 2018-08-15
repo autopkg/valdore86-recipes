@@ -14,7 +14,7 @@
             <string>FE22C6FD83135D45</string>
         </dict>
         <key>MinimumVersion</key>
-        <string>0.6.1</string>
+        <string>1.0.4</string>
         <key>ParentRecipe</key>
         <string>com.github.valdore86.download.KeePassX</string>
         <key>Process</key>
