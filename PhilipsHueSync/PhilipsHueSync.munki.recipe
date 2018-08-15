@@ -28,6 +28,8 @@
 				<string>Microsoft</string>
 				<key>name</key>
 				<string>%NAME%</string>
+				<key>display_name</key>
+				<string>Hue Sync</string>
 				<key>unattended_install</key>
 				<true/>
 			</dict>
