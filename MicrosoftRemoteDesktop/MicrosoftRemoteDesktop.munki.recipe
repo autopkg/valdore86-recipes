@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Description</key>
+		<string>Downloads MicrosoftRemoteDesktop and imports in into Munki.</string>
+		<key>Identifier</key>
+		<string>com.github.valdore86.munki.MicrosoftRemoteDesktop</string>
+		<key>Input</key>
+		<dict>
+			<key>MUNKI_REPO_SUBDIR</key>
+			<string>apps/Microsoft</string>
+			<key>MUNKI_CATEGORY</key>
+			<string>Utilities</string>
+			<key>NAME</key>
+			<string>Microsoft Remote Desktop</string>
+			<key>pkginfo</key>
+			<dict>
+				<key>blocking_applications</key>
+				<array>
+					<string>Microsoft Remote Desktop</string>
+					<string>MicrosoftRemoteDesktop</string>
+				</array>
+				<key>catalogs</key>
+				<array>
+					<string>testing</string>
+				</array>
+				<key>category</key>
+				<string>%MUNKI_CATEGORY%</string>
+				<key>description</key>
+				<string>With the Microsoft Remote Desktop app, you can connect to a remote PC and your work resources from almost anywhere. Experience the power of Windows with RemoteFX in a Remote Desktop client designed to help you get your work done wherever you are.</string>
+				<key>developer</key>
+				<string>Microsoft</string>
+				<key>name</key>
+				<string>%NAME%</string>
+				<key>postinstall_script</key>
+				<string>#!/bin/sh
+
+/usr/bin/rsync -av --delete "/Applications/Microsoft Remote Desktop.localized/Microsoft Remote Desktop.app/" "/Applications/Microsoft Remote Desktop.app/"
+/bin/rm -rf "/Applications/Microsoft Remote Desktop.localized"
+
+exit 0
+			</string>
+				<key>unattended_install</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>MinimumVersion</key>
+    <string>1.0.4</string>
+    <key>ParentRecipe</key>
+    <string>com.github.valdore86.download.MicrosoftRemoteDesktop</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
