@@ -23,21 +23,7 @@
 				<key>category</key>
 				<string>%MUNKI_CATEGORY%</string>
 				<key>description</key>
-				<string>Robo 3T — is a shell-centric cross-platform open source MongoDB management tool (i.e. Admin GUI).
-
-					We are very happy to announce the release of Robo 3T 1.1 !
-
-What's new in this release:
-— MongoDB 3.4 support
-— New NumberDecimal (Decimal128) data type support
-— ECMAScript 2015 aka ES6 Support (Modernized JavaScript Implementation)
-— Renaming Robomongo to Robo 3T
-— Shell timeout is configurable on UI now 'Options->Change Shell Timeout'
-— Fix for Robo 3T Shell Timeout Issue (silently, prematurely finishing long lasting scripts)
-— Stability Improvement: Fix included to prevent a on start crash on MACOS Sierra
-— Security Improvement: OpenSSL version upgrade to openssl-1.0.1u (22-Sep-2016)
-— Tool chain upgrades: Modern C++14 features are enabled and usable for developers
-				</string>
+				<string>Robo 3T — is a shell-centric cross-platform open source MongoDB management tool (i.e. Admin GUI)</string>
 				<key>developer</key>
 				<string>Paralect</string>
 				<key>display_name</key>
