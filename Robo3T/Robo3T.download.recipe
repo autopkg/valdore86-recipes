@@ -10,37 +10,27 @@
 		<dict>
 			<key>NAME</key>
 			<string>RoboMongo</string>
-			<key>BASE_URL</key>
-			<string>https://robomongo.org/download</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>1.0.4</string>
 		<key>Process</key>
 		<array>
 			<dict>
-				<key>Processor</key>
-				<string>CURLTextSearcher</string>
-				<key>Arguments</key>
-				<dict>
-					<key>url</key>
-					<string>%BASE_URL%</string>
-					<key>re_pattern</key>
-					<string>(https://download.robomongo.org/[0-9\.]+/osx/robo[^\.]+-[0-9\.]+-darwin-x86_64-[^\.]+.dmg)</string>
-					<key>result_output_var_name</key>
-					<string>search_url</string>
-					<key>re_flags</key>
-					<array>
-						<string>DOTALL</string>
-					</array>
-				</dict>
-			</dict>
+                <key>Processor</key>
+                <string>GitHubReleasesInfoProvider</string>
+                <key>Arguments</key>
+                <dict>
+					<key>asset_regex</key>
+					<string>robo3t.*dmg</string>
+                    <key>github_repo</key>
+                    <string>Studio3T/robomongo</string>
+                </dict>
+            </dict>
 			<dict>
 				<key>Processor</key>
-				<string>CURLDownloader</string>
+				<string>URLDownloader</string>
 				<key>Arguments</key>
 				<dict>
-					<key>url</key>
-					<string>%search_url%</string>
 					<key>filename</key>
 					<string>%NAME%.dmg</string>
 				</dict>
