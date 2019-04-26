@@ -12,12 +12,12 @@
 		<string>apps/Visual Studio Code</string>
 		<key>NAME</key>
 		<string>Visual Studio Code</string>
-		<key>blocking_applications</key>
-		<array>
-			<string>Visual Studio Code</string>
-		</array>
 		<key>pkginfo</key>
 		<dict>
+			<key>blocking_applications</key>
+			<array>
+				<string>Visual Studio Code</string>
+			</array>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
