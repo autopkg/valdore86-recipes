@@ -2,45 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Identifier</key>
-	<string>com.github.valdore86.munki.VirtualboxHost</string>
 	<key>Description</key>
 	<string>Downloads VirtualBox and imports into Munki.</string>
+	<key>Identifier</key>
+	<string>com.github.valdore86.munki.VirtualboxHost</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>VirtualBox</string>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/VirtualBox</string>
 		<key>MUNKI_CATEGORY</key>
 		<string>Virtualization</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/VirtualBox</string>
+		<key>NAME</key>
+		<string>VirtualBox</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>name</key>
-			<string>%NAME%</string>
-			<key>display_name</key>
-			<string>VirtualBox</string>
-			<key>category</key>
-			<string>%MUNKI_CATEGORY%</string>
-			<key>developer</key>
-			<string>Oracle</string>
-			<key>description</key>
-			<string>Oracle VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use. Not only is VirtualBox an extremely feature rich, high performance product for enterprise customers, it is also the only professional solution that is freely available as Open Source Software under the terms of the GNU General Public License (GPL) version 2. See &quot;About VirtualBox&quot; for an introduction.</string>
-			<key>catalogs</key>
-			<array>
-				<string>testing</string>
-			</array>
-			<key>unattended_install</key>
-			<true/>
 			<key>blocking_applications</key>
 			<array>
 				<string>VirtualBox</string>
 			</array>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>%MUNKI_CATEGORY%</string>
+			<key>description</key>
+			<string>Oracle VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use. Not only is VirtualBox an extremely feature rich, high performance product for enterprise customers, it is also the only professional solution that is freely available as Open Source Software under the terms of the GNU General Public License (GPL) version 2. See "About VirtualBox" for an introduction.</string>
+			<key>developer</key>
+			<string>Oracle</string>
+			<key>display_name</key>
+			<string>VirtualBox</string>
+			<key>name</key>
+			<string>%NAME%</string>
 			<key>supported_architectures</key>
 			<array>
 				<string>i386</string>
 				<string>x86_64</string>
 			</array>
+			<key>unattended_install</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
@@ -50,8 +50,6 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Processor</key>
-			<string>MunkiImporter</string>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
@@ -59,6 +57,8 @@
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
 			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
 		</dict>
 	</array>
 </dict>
