@@ -14,10 +14,6 @@
 		<string>Azure Data Studio</string>
 		<key>pkginfo</key>
 		<dict>
-			<key>blocking_applications</key>
-			<array>
-				<string>Azure Data Studio</string>
-			</array>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
