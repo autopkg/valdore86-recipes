@@ -1,112 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the current release version of Mactracker and imports into Munki.</string>
+	<key>Identifier</key>
+	<string>com.github.valdore86.munki.mactracker</string>
+	<key>Input</key>
 	<dict>
-		<key>Description</key>
-		<string>Downloads the current release version of Mactracker and imports into Munki.</string>
-		<key>Identifier</key>
-		<string>com.github.valdore86.munki.mactracker</string>
-		<key>Input</key>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/Mactracker</string>
+		<key>NAME</key>
+		<string>Mactracker</string>
+		<key>pkginfo</key>
 		<dict>
-			<key>NAME</key>
-			<string>Mactracker</string>
-			<key>MUNKI_REPO_SUBDIR</key>
-			<string>apps/Mactracker</string>
-			<key>pkginfo</key>
-			<dict>
-				<key>catalogs</key>
-				<array>
-					<string>testing</string>
-				</array>
-				<key>category</key>
-				<string>Utilities</string>
-				<key>description</key>
-				<string>Mactracker provides detailed information on every Apple Macintosh, iPod, iPhone, and iPad ever made, including items such as processor speed, memory, graphic cards, supported OS versions, price, storage, and expansion options. Also included is information on early Apple systems, Newton, Apple TV, Apple Watch, Apple accessories, displays, printers, scanners, Wi-Fi products, and operating systems.</string>
-				<key>developer</key>
-				<string>Ian Page</string>
-				<key>name</key>
-				<string>%NAME%</string>
-				<key>unattended_install</key>
-				<true/>
-			</dict>
+			<key>catalogs</key>
+			<array>
+				<string>testing</string>
+			</array>
+			<key>category</key>
+			<string>Utilities</string>
+			<key>description</key>
+			<string>Mactracker provides detailed information on every Apple Macintosh, iPod, iPhone, and iPad ever made, including items such as processor speed, memory, graphic cards, supported OS versions, price, storage, and expansion options. Also included is information on early Apple systems, Newton, Apple TV, Apple Watch, Apple accessories, displays, printers, scanners, Wi-Fi products, and operating systems.</string>
+			<key>developer</key>
+			<string>Ian Page</string>
+			<key>name</key>
+			<string>%NAME%</string>
+			<key>unattended_install</key>
+			<true/>
 		</dict>
-		<key>MinimumVersion</key>
-		<string>1.0.4</string>
-		<key>ParentRecipe</key>
-		<string>com.github.valdore86.download.mactracker</string>
-		<key>Process</key>
-		<array>
-			<dict>
-				<key>Processor</key>
-				<string>Unarchiver</string>
-				<key>Arguments</key>
-				<dict>
-					<key>archive_path</key>
-					<string>%pathname%</string>
-					<key>destination_path</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-					<key>purge_destination</key>
-					<true/>
-				</dict>
-			</dict>
-			<dict>
-				<key>Processor</key>
-				<string>CodeSignatureVerifier</string>
-				<key>Arguments</key>
-				<dict>
-					<key>input_path</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%.app</string>
-					<key>requirement</key>
-					<string>identifier "com.mactrackerapp.Mactracker" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "63TP32R3AB"</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>Processor</key>
-				<string>Versioner</string>
-				<key>Arguments</key>
-				<dict>
-					<key>input_plist_path</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%.app/Contents/Info.plist</string>
-					<key>plist_version_key</key>
-					<string>CFBundleShortVersionString</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>Processor</key>
-				<string>DmgCreator</string>
-				<key>Arguments</key>
-				<dict>
-					<key>dmg_root</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-					<key>dmg_path</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>Processor</key>
-				<string>MunkiPkginfoMerger</string>
-				<key>Arguments</key>
-				<dict>
-					<key>additional_pkginfo</key>
-					<dict>
-						<key>version</key>
-						<string>%version%</string>
-					</dict>
-				</dict>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>pkg_path</key>
-					<string>%dmg_path%</string>
-					<key>repo_subdirectory</key>
-					<string>%MUNKI_REPO_SUBDIR%</string>
-					<key>version_comparison_key</key>
-					<string>CFBundleShortVersionString</string>
-				</dict>
-				<key>Processor</key>
-				<string>MunkiImporter</string>
-			</dict>
-		</array>
 	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.4</string>
+	<key>ParentRecipe</key>
+	<string>com.github.valdore86.download.mactracker</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>dmg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+				<key>dmg_root</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+			</dict>
+			<key>Processor</key>
+			<string>DmgCreator</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>additional_pkginfo</key>
+				<dict>
+					<key>version</key>
+					<string>%version%</string>
+				</dict>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiPkginfoMerger</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%dmg_path%</string>
+				<key>repo_subdirectory</key>
+				<string>%MUNKI_REPO_SUBDIR%</string>
+				<key>version_comparison_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
+		</dict>
+	</array>
+</dict>
 </plist>
