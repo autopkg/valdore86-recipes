@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release version of Fantastical 2.</string>
+	<string>Downloads the current release version of Fantastical.</string>
 	<key>Identifier</key>
-	<string>com.github.valdore86.download.fantastical2</string>
+	<string>com.github.valdore86.download.fantastical</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -17,15 +17,6 @@
 	<string>1.0.4</string>
 	<key>Process</key>
 	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>warning_message</key>
-				<string>This recipe will be deprecated soon. Please use Fantastical.download.recipe (from this repo)</string>
-			</dict>
-			<key>Processor</key>
-			<string>DeprecationWarning</string>
-		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
