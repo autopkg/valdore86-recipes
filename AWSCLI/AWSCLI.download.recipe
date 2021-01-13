@@ -4,5 +4,30 @@
 <dict>
 	<key>Description</key>
 	<string>Downloads the latest version of http://aws.amazon.com/cli/</string>
+	<key>Identifier</key>
+	<string>com.github.valdore86.download.AWSCLI</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>AWSCLI</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.2.9</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+			<key>Arguments</key>
+			<dict>
+				<key>url</key>
+				<string>https://awscli.amazonaws.com/AWSCLIV2.pkg</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+	</array>
 </dict>
 </plist>
