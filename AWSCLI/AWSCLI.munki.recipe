@@ -28,14 +28,6 @@
             <string>%NAME%</string>
             <key>unattended_install</key>
             <true/>
-            <key>preinstall_script</key>
-			<string>#!/bin/sh
-
-sudo rm -rf /usr/local/aws
-sudo rm /usr/local/bin/aws
-
-exit 0
-			</string>
         </dict>
     </dict>
     <key>MinimumVersion</key>
