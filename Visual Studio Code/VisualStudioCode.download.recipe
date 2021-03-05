@@ -21,7 +21,7 @@
 				<key>filename</key>
 				<string>vscode.zip</string>
 				<key>url</key>
-				<string>https://go.microsoft.com/fwlink/?LinkID=620882</string>
+				<string>https://code.visualstudio.com/sha/download?build=stable&amp;os=darwin-universal</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
