@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of http://aws.amazon.com/cli/</string>
+	<string>Downloads the latest version of AWSCLI2</string>
 	<key>Identifier</key>
 	<string>com.github.valdore86.download.AWSCLI</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>AWSCLI</string>
+		<string>AWSCLI2</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>
@@ -27,6 +27,21 @@
 		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>expected_authority_names</key>
+				<array>
+					<string>Developer ID Installer: AMZN Mobile LLC (94KV3E626L)</string>
+					<string>Developer ID Certification Authority</string>
+					<string>Apple Root CA</string>
+				</array>
+				<key>input_path</key>
+				<string>%pathname%</string>
+			</dict>
 		</dict>
 	</array>
 </dict>
