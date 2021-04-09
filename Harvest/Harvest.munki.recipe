@@ -6,6 +6,10 @@
 	<string>Downloads the current release version of Harvest via appcast and imports it into a Munki repository.</string>
 	<key>Identifier</key>
 	<string>com.github.valdore86.munki.harvest</string>
+	<key>DeprecationWarning</key>
+	<string>These recipes for Harvest will be decommissioned at the end of April.
+	Harvest has only been updating their MAS app since a recent update.
+	Please take a look at https://github.com/autopkg/nmcspadden-recipes/tree/master/AppStoreApp on how to use these with AutoPkg.</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>

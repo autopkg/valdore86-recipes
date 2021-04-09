@@ -6,6 +6,10 @@
 	<string>Downloads the current release version of Harvest via appcast.</string>
 	<key>Identifier</key>
 	<string>com.github.valdore86.download.harvest</string>
+	<key>DeprecationWarning</key>
+	<string>The recipes for Harvest will be decommissioned at the end of April.
+	Harvest has only been updating their MAS app since a recent update.
+	Please take a look at https://github.com/autopkg/nmcspadden-recipes/tree/master/AppStoreApp</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
