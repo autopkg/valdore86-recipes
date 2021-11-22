@@ -23,7 +23,8 @@
             <key>Arguments</key>
             <dict>
                 <key>warning_message</key>
-                <string>Moved to the Mac App Store, please deploy via VPP - https://apps.apple.com/us/app/pluralsight-learn-tech-skills/id431748264</string>
+                <string>Moved to the Mac App Store, please deploy via VPP - https://apps.apple.com/us/app/pluralsight-learn-tech-skills/id431748264
+				or take a look at https://github.com/autopkg/nmcspadden-recipes/tree/master/AppStoreApp on how to use App Store apps with AutoPkg.</string>
             </dict>
         </dict>
         <dict>   
