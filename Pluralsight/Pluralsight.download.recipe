@@ -17,6 +17,25 @@
 	<string>1.0.4</string>
 	<key>Process</key>
 	<array>
+        <dict>
+            <key>Processor</key>
+            <string>DeprecationWarning</string>
+            <key>Arguments</key>
+            <dict>
+                <key>warning_message</key>
+                <string>Moved to the Mac App Store, please deploy via VPP - https://apps.apple.com/us/app/pluralsight-learn-tech-skills/id431748264
+				or take a look at https://github.com/autopkg/nmcspadden-recipes/tree/master/AppStoreApp on how to use App Store apps with AutoPkg.</string>
+            </dict>
+        </dict>
+        <dict>   
+            <key>Processor</key>   
+            <string>StopProcessingIf</string>   
+            <key>Arguments</key>   
+            <dict>   
+                <key>predicate</key>   
+                <string>TRUEPREDICATE</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
