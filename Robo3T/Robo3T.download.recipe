@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Download recipe for the latest Robo3T.</string>
+	<string>Download recipe for the latest LEGACY Robo3T.</string>
 	<key>Identifier</key>
 	<string>com.github.valdore86.download.Robo3T</string>
 	<key>Input</key>
@@ -15,6 +15,15 @@
 	<string>1.0.4</string>
 	<key>Process</key>
 	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>warning_message</key>
+				<string>This recipe is deprecated. Please only use this to get the latest LEGACY version. For the latest Studio 3T Free check com.github.valdore86.download.Studio3T!</string>
+			</dict>
+			<key>Processor</key>
+			<string>DeprecationWarning</string>
+		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
