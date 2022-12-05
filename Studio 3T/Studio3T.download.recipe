@@ -13,7 +13,7 @@
 		<key>Comment</key>
 		<string>Override ARCH with mac-aarch64 for Apple Silicon Version</string>
 		<key>ARCH</key>
-		<string>mac-aarch64</string>
+		<string>mac</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
