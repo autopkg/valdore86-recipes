@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Download recipe for the latest Robomongo.</string>
+	<string>Download recipe for the latest Robo3T.</string>
 	<key>Identifier</key>
-	<string>com.github.valdore86.download.RoboMongo</string>
+	<string>com.github.valdore86.download.Robo3T</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
-		<string>RoboMongo</string>
+		<string>Robo3T</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.4</string>
@@ -30,7 +30,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%-%version%.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>

@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Robomongo and imports it in into Munki.</string>
+	<string>Downloads the latest Robo3T and imports it in into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.valdore86.munki.RoboMongo</string>
+	<string>com.github.valdore86.munki.Robo3T</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_CATEGORY</key>
 		<string>Developer</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/Paralect</string>
+		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>RoboMongo</string>
+		<string>Robo3T</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -23,11 +23,11 @@
 			<key>category</key>
 			<string>%MUNKI_CATEGORY%</string>
 			<key>description</key>
-			<string>Robo 3T — is a shell-centric cross-platform open source MongoDB management tool (i.e. Admin GUI)</string>
+			<string>Robo3T — is a shell-centric cross-platform open source MongoDB management tool (i.e. Admin GUI)</string>
 			<key>developer</key>
 			<string>Paralect</string>
 			<key>display_name</key>
-			<string>Robo 3T</string>
+			<string>Robo3T</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
@@ -37,32 +37,9 @@
 	<key>MinimumVersion</key>
 	<string>1.0.4</string>
 	<key>ParentRecipe</key>
-	<string>com.github.valdore86.download.RoboMongo</string>
+	<string>com.github.valdore86.download.Robo3T</string>
 	<key>Process</key>
 	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_plist_path</key>
-				<string>%pathname%/Robo 3T.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleVersion</string>
-			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>additional_pkginfo</key>
-				<dict>
-					<key>version</key>
-					<string>%version%</string>
-				</dict>
-			</dict>
-			<key>Processor</key>
-			<string>MunkiPkginfoMerger</string>
-		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -70,8 +47,6 @@
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
-				<key>version_comparison_key</key>
-				<string>CFBundleVersion</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
