@@ -35,15 +35,6 @@
             		<string>10.13</string>
 			<key>name</key>
 			<string>%NAME%</string>
-			<key>postinstall_script</key>
-			<string>#!/bin/sh
-
-mkdir -p "/Applications/Microsoft Remote Desktop.app/"
-/usr/bin/rsync -av --delete "/Applications/Microsoft Remote Desktop.localized/Microsoft Remote Desktop.app/" "/Applications/Microsoft Remote Desktop.app/"
-/bin/rm -rf "/Applications/Microsoft Remote Desktop.localized"
-
-exit 0
-			</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
