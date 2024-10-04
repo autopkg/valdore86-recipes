@@ -22,6 +22,7 @@
 			<array>
 				<string>Microsoft Remote Desktop</string>
 				<string>MicrosoftRemoteDesktop</string>
+				<string>Windows App</string>
 			</array>
 			<key>catalogs</key>
 			<array>
