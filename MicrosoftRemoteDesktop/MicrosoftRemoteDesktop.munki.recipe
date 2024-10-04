@@ -14,12 +14,15 @@
 		<string>apps/Microsoft</string>
 		<key>NAME</key>
 		<string>Microsoft Remote Desktop</string>
+		<key>DISPLAY_NAME</key>
+		<string>Windows App</string>		
 		<key>pkginfo</key>
 		<dict>
 			<key>blocking_applications</key>
 			<array>
 				<string>Microsoft Remote Desktop</string>
 				<string>MicrosoftRemoteDesktop</string>
+				<string>Windows App</string>
 			</array>
 			<key>catalogs</key>
 			<array>
@@ -28,13 +31,15 @@
 			<key>category</key>
 			<string>%MUNKI_CATEGORY%</string>
 			<key>description</key>
-			<string>With the Microsoft Remote Desktop app, you can connect to a remote PC and your work resources from almost anywhere. Experience the power of Windows with RemoteFX in a Remote Desktop client designed to help you get your work done wherever you are.</string>
+			<string>Windows App is your gateway to Azure Virtual Desktop, Windows 365, Microsoft Dev Box, Remote Desktop Services, and remote PCs, securely connecting you to Windows devices and apps.</string>
 			<key>developer</key>
 			<string>Microsoft</string>
 			<key>minimum_os_version</key>
-            		<string>10.13</string>
+			<string>12.0</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>display_name</key>
+			<string>%DISPLAY_NAME%</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
