@@ -18,6 +18,17 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>warning_message</key>
+				<string>
+This recipe is no longer maintained and will be removed after June 2026. Please switch to the maintained replacement: https://github.com/autopkg/arubdesu-recipes/blob/master/Mactracker/Mactracker.munki.recipe
+				</string>
+			</dict>
+			<key>Processor</key>
+			<string>DeprecationWarning</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>re_pattern</key>
 				<string>(https://mactracker.ca/downloads/Mactracker_[0-9\.]+.zip)</string>
 				<key>result_output_var_name</key>
