@@ -43,6 +43,17 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>warning_message</key>
+				<string>
+This recipe is no longer maintained and will be removed after June 2026. If you are interested in taking over this recipe, please get in touch.
+				</string>
+			</dict>
+			<key>Processor</key>
+			<string>DeprecationWarning</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>re_pattern</key>
 				<string>https://download.virtualbox.org/virtualbox/([0-9\.]+)/VirtualBox-[0-9\.]+-[0-999999\.]+-OSX.dmg</string>
 				<key>result_output_var_name</key>
