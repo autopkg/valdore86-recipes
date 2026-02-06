@@ -8,10 +8,12 @@
 	<string>com.github.valdore86.download.visualstudiocode</string>
 	<key>Input</key>
 	<dict>
-		<key>NAME</key>
-		<string>Visual Studio Code</string>
+		<key>DOWNLOAD_ARCH</key>
+		<string>universal</string>
 		<key>USER_AGENT</key>
 		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/536.28.10 (KHTML, like Gecko) Version/6.0.3 Safari/536.28.10</string>
+		<key>NAME</key>
+		<string>Visual Studio Code</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.4</string>
@@ -21,9 +23,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>vscode.dmg</string>
+				<string>%NAME%-%ARCH%-%version%.dmg</string>
 				<key>url</key>
-				<string>https://code.visualstudio.com/sha/download?build=stable&amp;os=darwin-universal-dmg</string>
+				<string>https://code.visualstudio.com/sha/download?build=stable&amp;os=darwin-%DOWNLOAD_ARCH%-dmg</string>
 				<key>request_headers</key>
 				<dict>
 					<key>user-agent</key>
