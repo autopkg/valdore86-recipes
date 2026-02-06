@@ -8,6 +8,8 @@
 	<string>com.github.valdore86.munki.visualstudiocode</string>
 	<key>Input</key>
 	<dict>
+		<key>DOWNLOAD_ARCH</key>
+		<string>universal</string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/Visual Studio Code</string>
 		<key>NAME</key>
