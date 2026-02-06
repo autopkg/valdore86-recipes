@@ -18,6 +18,17 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>warning_message</key>
+				<string>
+This recipe is no longer maintained and will be removed after June 2026. If you are interested in taking over this recipe, please get in touch.
+				</string>
+			</dict>
+			<key>Processor</key>
+			<string>DeprecationWarning</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
 				<key>filename</key>
 				<string>azuredatastudio.zip</string>
 				<key>url</key>
