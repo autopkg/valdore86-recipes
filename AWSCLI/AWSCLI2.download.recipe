@@ -16,6 +16,17 @@
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>warning_message</key>
+				<string>
+This recipe is no longer maintained and will be removed after June 2026. Please switch to the maintained replacement: https://github.com/autopkg/homebysix-recipes/tree/master/Amazon
+				</string>
+			</dict>
+			<key>Processor</key>
+			<string>DeprecationWarning</string>
+		</dict>
+		<dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
 			<key>Arguments</key>
